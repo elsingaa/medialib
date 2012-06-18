@@ -8,7 +8,12 @@ medialib is a unifying solution for accessing media libraries like Plex and XMBC
 
 
 ##What features does it have?
-* nothing yet
+* plexgetxml (internal only)
+* recentlyAddedTV
+* recentlyAiredTV
+* recentlyAddedMovies
+* clients
+
 
 ##timeline/priority
 
