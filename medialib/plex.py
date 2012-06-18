@@ -4,38 +4,6 @@ Created on Jun 6, 2012
 @author: Anne Jan Elsinga
 '''
 
-'''
-Generieke layout library
-
-4 soorten:
-- movies
-- tv series
-- music
-- pictures
-
-TV Series:
-----------
-Naam serie
-synopsis serie
-naam aflevering
-synopsys aflevering
-
-Movies:
--------
-Naam film
-Synopsis
-
-
-'''
-
-'''
-(semi) Finished functions and routines (without error handling)
-connect
-plexgetxml (internal)
-recentlyAddedTV
-recentlyAddedMovies
-
-'''
 
 from medialib import MediaLibrary
 from elementtree import ElementTree
