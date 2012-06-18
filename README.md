@@ -19,6 +19,4 @@ medialib is a unifying solution for accessing media libraries like Plex and XMBC
 
 The first priority will be to set up a working library for integration in Maraschino, a front-end for HTPCs.
 
-history
-=======
  
