@@ -1,11 +1,13 @@
 # from medialib.medialib import MediaPlayer
 from medialib.plex import PlexMediaLibrary
 
-PlexServer = "http://192.168.1.9:32400"
-MovieSection = "1"
-TVSection = "2"
+
 
 if __name__ == '__main__':
+    PlexServer = "http://" + raw_input("Enter Plex Server (name or IP address): ")+":"+raw_input("enter port: ")
+    MovieSection = raw_input ("Enter the library ID for your movies: ")
+    TVSection = raw_input ("Enter the library ID for your series: ")
+
     mediaplayer = PlexMediaLibrary(PlexServer,MovieSection, TVSection)
     mediaplayer.info()
     #===========================================================================
