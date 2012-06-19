@@ -8,7 +8,7 @@ from collections import namedtuple
 
 class MediaLibrary:
     TVitem = namedtuple("TVitem", 'showtitle synopsis title summary duration season episode viewcount')
-    MovieItem = namedtuple ("MovieItem", 'movie summary')
+    MovieItem = namedtuple ("MovieItem", 'title summary')
     ClientItem = namedtuple ("ClientItem", 'name host address port')
     mediaplayer=""
     mediaplayerprotocol=""
