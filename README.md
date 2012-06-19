@@ -15,7 +15,7 @@ medialib is a unifying solution for accessing media libraries like Plex and XMBC
 * clients
 
 
-##timeline/priority
+##Timeline/priority
 
 1. generic object model (Python)
 2. Plex implementation (Python)
@@ -24,4 +24,8 @@ medialib is a unifying solution for accessing media libraries like Plex and XMBC
 
 The first priority will be to set up a working library for integration in Maraschino, a front-end for HTPCs.
 
+##Demo program
+A simple demo program is available to demonstrate various functions in the library. Start it with python demo.py and enter your configuration settings.
+The library ID's can be found with a web browser pointing to http://<yourplexserver>:<port>/library/sections, look up the correct library (title)
+and use the values mentioned with key=
  

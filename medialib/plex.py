@@ -30,7 +30,13 @@ class PlexMediaLibrary(MediaLibrary):
 #===============================================================================
 # Functions that are in beta testing
 #===============================================================================
- 
+    def str2int (self,string):
+        try:
+            i = int(string)
+        except (ValueError,TypeError):
+            i = 0
+        return i
+
     def plexgetxml (self, location):
         '''
         plexgetxml returns the root for an XML for Plex
@@ -51,9 +57,9 @@ class PlexMediaLibrary(MediaLibrary):
                 TVItems.append(self.TVitem(node.get('grandparentTitle'),extrainfo.get("summary"), 
                                           node.get("title"), node.get("summary"), 
                                           node.get("duration"),
-                                          int(node.get ('parentIndex')),
-                                          int(node.get ('index')),
-                                          int(node.get ('viewCount'))))
+                                          self.str2int(node.get ('parentIndex')),
+                                          self.str2int(node.get ('index')),
+                                          self.str2int(node.get ('viewCount'))))
         return TVItems
     
     def recentlyAddedMovies(self):
@@ -99,9 +105,9 @@ class PlexMediaLibrary(MediaLibrary):
                 TVItems.append (self.TVitem(node.get('grandparentTitle'),extrainfo.get("summary"), 
                                             node.get("title"), node.get("summary"), 
                                             node.get("duration"),
-                                            int(node.get ('parentIndex')),
-                                            int(node.get ('index')),
-                                            node.get ('viewCount')))
+                                            self.str2int(node.get ('parentIndex')),
+                                            self.str2int(node.get ('index')),
+                                            self.str2int(node.get ('viewCount'))))
         return TVItems
 #===============================================================================
 # Functions that are pre-alpha and alpha        
